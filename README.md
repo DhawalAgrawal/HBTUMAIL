@@ -1,6 +1,6 @@
 # HBTUMAIL
 
-Join the chat at https://gitter.im/DhawalAgrawalHBTUMAIL
+[![Join the chat at https://gitter.im/DhawalAgrawalHBTUMAIL](https://badges.gitter.im/DhawalAgrawalHBTUMAIL.svg)](https://gitter.im/DhawalAgrawalHBTUMAIL?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > A Webmail service to connect faculty and students of HBTU Kanpur. http://hbtumail.decoder.co.in/
 
