@@ -1,0 +1,123 @@
+
+
+#wrap{font: 0.9em 'Ubuntu', arial, sans-serif;
+	    width: 800px;
+    height: auto;
+    margin: 0 50px;
+}
+
+fieldset {
+	border: 0;
+}
+
+fieldset legend {
+	color: #666;
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.formRow {
+    overflow: auto;
+    padding: 10px 0 0 0;
+    max-width: 100%;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #474d70;
+}
+
+.formRow label {
+	padding: 4px;
+	margin: 0 3px 0 0;
+	border-right: 1px #bcbcbc solid;
+}
+
+
+/* Drag & Drop file uploading */
+
+.droppable {
+    display:none;
+	border: #121a3f 1px solid;
+	border-radius: 3px;
+	background: #545A74;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	clear: both;
+	text-align: center;
+}
+
+.droppable.hover {
+	background: #121a3f;
+}
+
+.uploadList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.uploadItem {
+    overflow: hidden;
+    /* border-bottom: #BCBCBC 1px solid; */
+    background: #f5f5f5;
+    margin: 5px 0 0 0;
+    /* margin: 0 20px; */
+    padding: 10px;
+    width: 50%;
+}
+
+.uploadItem span {
+	overflow: hidden;
+	width: 90%;
+	float: left;
+	display: block;
+}
+
+a.addInputRow,
+a.delInputRow,
+.uploadItem a {
+	display: inline-block;
+	background: url(../images/add.png) no-repeat;
+	height: 16px;
+	width: 16px;
+	text-indent: -999px;
+}
+
+.uploadItem a {
+    float: right;
+    display: block;
+    /* padding-left: 20px; */
+    background-image: url(../images/delete.png);
+}
+
+a.delInputRow {
+	background-image: url(../images/delete.png);
+}
+
+.progress {
+	margin: 5px 0;
+	height: 15px;
+	border-radius: 3px;
+	background: #545A74;
+}
+
+@media screen and (max-width: 720px){
+
+.uploadItem {
+    overflow: hidden;
+    /* border-bottom: #BCBCBC 1px solid; */
+    background: #f5f5f5;
+    margin: 5px 0 0 0;
+    /* margin: 0 20px; */
+    padding: 10px;
+    width: 95%;
+}
+#wrap {
+    font: 0.9em 'Ubuntu', arial, sans-serif;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+}
