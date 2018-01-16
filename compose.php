@@ -204,10 +204,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
       </div>
       <div class='filter-attributes'>
         <h4>YEAR</h4>
-        <div class="PROP"><input type='checkbox' class='year' name='1st' id='1st' value='1st' >1st</div>
-        <div class="PROP"><input type='checkbox' class='year' name='2nd' id='2nd' value='2nd' >2nd</div>
-        <div class="PROP"><input type='checkbox' class='year' name='3rd' id='3rd' value='3rd' >3rd</div>
-        <div class="PROP"><input type='checkbox' class='year' name='final' id='final' value='final' >Final</div>
+        <div class="PROP"><input type='checkbox' class='year' name='First' id='First' value='First' >First</div>
+        <div class="PROP"><input type='checkbox' class='year' name='Second' id='Second' value='Second' >Second</div>
+        <div class="PROP"><input type='checkbox' class='year' name='Third' id='Third' value='Third' >Third</div>
+        <div class="PROP"><input type='checkbox' class='year' name='Final' id='Final' value='Final' >Final</div>
       </div>
       <div class='filter-attributes'>
         <h4>BRANCH</h4>

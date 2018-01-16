@@ -9,10 +9,10 @@
 	$message = $_POST['message'];
 	$teacher  = $_POST['teacher'];
 	$student  = $_POST['student'];
-	$one  = $_POST['1st'];
-	$two  = $_POST['2nd'];
-	$three  = $_POST['3rd'];
-	$final  = $_POST['final'];
+	$First  = $_POST['First'];
+	$Second  = $_POST['Second'];
+	$Third  = $_POST['Third'];
+	$Final  = $_POST['Final'];
 	$BE  = $_POST['BE'];
 	$CE  = $_POST['CE'];
 	$CHE  = $_POST['CHE'];
@@ -35,10 +35,10 @@
 	if($student=='student'){$st[$i]=$student;$i++;}
 	if($teacher=='teacher'){$st[$i]=$teacher;$i++;}
 	$i=0;
-	if($one=='one'){$y[$i]=$one;$i++;}
-	if($two=='two'){$y[$i]=$two;$i++;}
-	if($three=='three'){$y[$i]=$three;$i++;}
-	if($final=='final'){$y[$i]=$four;$i++;}
+	if($First=='First'){$y[$i]=$First;$i++;}
+	if($Second=='Second'){$y[$i]=$Second;$i++;}
+	if($Third=='Third'){$y[$i]=$Third;$i++;}
+	if($Final=='Final'){$y[$i]=$Final;$i++;}
 	$i=0;
 	if($BE=='BE'){$b[$i]=$BE;$i++;}
 	if($CE=='CE'){$b[$i]=$CE;$i++;}
@@ -56,7 +56,7 @@
 	if($MCA=='MCA'){$b[$i]=$MCA;$i++;}
 if(sizeof($st)!=0 && sizeof($y)!=0 && sizeof($b)!=0)
 {for($i=0;$i<sizeof($st);$i++)
-{for($j=0;$j<sizeof($y);$y++)
+{for($j=0;$j<sizeof($y);$j++)
 {for($k=0;$k<sizeof($b);$k++){
 $rr=mysql_query("SELECT * FROM  `mailmembers` WHERE  `branch` LIKE  '$b[$k]' AND  `f_s` LIKE  '$st[$i]' AND  `year` LIKE  '$y[$j]'");
 while($b = mysql_fetch_array($rr))
@@ -65,7 +65,7 @@ $l++;}}}
 }}
 else if(sizeof($st)!=0 && sizeof($y)!=0 && sizeof($b)==0)
 {for($i=0;$i<sizeof($st);$i++)
-{for($j=0;$j<sizeof($y);$y++)
+{for($j=0;$j<sizeof($y);$j++)
 {
 $rr=mysql_query("SELECT * FROM  `mailmembers` WHERE  `f_s` LIKE  '$st[$i]' AND  `year` LIKE  '$y[$j]'");
 while($b = mysql_fetch_array($rr))
@@ -81,7 +81,7 @@ while($b = mysql_fetch_array($rr))
 $l++;}}
 }}
 else if(sizeof($st)==0 && sizeof($y)!=0 && sizeof($b)!=0)
-{for($j=0;$j<sizeof($y);$y++)
+{for($j=0;$j<sizeof($y);$j++)
 {for($k=0;$k<sizeof($b);$k++){
 $rr=mysql_query("SELECT * FROM  `mailmembers` WHERE  `branch` LIKE  '$b[$k]' AND  `year` LIKE  '$y[$j]'");
 while($b = mysql_fetch_array($rr))
@@ -96,7 +96,7 @@ while($b = mysql_fetch_array($rr))
 $l++;}}}
 
 else if(sizeof($st)==0 && sizeof($y)!=0 && sizeof($b)==0)
-{for($j=0;$j<sizeof($y);$y++)
+{for($j=0;$j<sizeof($y);$j++)
 {
 $rr=mysql_query("SELECT * FROM  `mailmembers` WHERE  `year` LIKE  '$y[$j]'");
 while($b = mysql_fetch_array($rr))
