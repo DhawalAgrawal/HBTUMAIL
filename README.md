@@ -10,7 +10,7 @@ This repository is licensed under GNU General Public License v3.0
 ## How to Setup
 
 Setting up HBTUMAIL on your local machine is really easy.
-Follow this guide to setup your development machine.
+Follow this guide to setup your development enviroment.
 
 ### Requirements :
 
@@ -38,27 +38,27 @@ Follow this guide to setup your development machine.
 3. Setting up the Dreamweaver.
 
 	```
-	open index page in dreamweaver
-	 Click files on right side of window
-   manage sites
+	Open the index.php page in Dreamweaver
+	 Click files on the right side of the window
+   Manage sites
    New
    Site name HBTUMAIL
    Local root folder < path\xampp\htdocs\HBTUMAIL\
    HTTP Address < http://localhost/HBTUMAIL/
-   server mode PHP MySQL
+   Server-Mode PHP MySQL
    Access LOCAL/NETWORK
    Testing server folder < path\xampp\htdocs\HBTUMAIL\
    URL prefix < http://localhost/HBTUMAIL/
-   ok
+   OK
 	```
 
 
 4. Create an empty sql database and run import database.
 
 	```
-	Start MySQL admin in xammp
-	create new database HBTUMAIL
-	import databse < path\HBTUMAIL\sql\HBTUMAIL.sql
+	Start MySQL as Admin in XAMMP
+	Create new database called HBTUMAIL
+	import database < path\HBTUMAIL\sql\HBTUMAIL.sql
 	```
 
 That's it, now start development at [http://localhost/HBTUMAIL/index.php](http://localhost/HBTUMAIL/index.php) in your browser
