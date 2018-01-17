@@ -6,7 +6,7 @@
 
 #gx-sidemenu, #gx-sidemenu-right {
 	position: fixed;
-	background: #5d9dcd; /*url('images/gmenu_bg.png') repeat;*/
+	background: #ccecec; /*url('images/gmenu_bg.png') repeat;*/
 	width: 15%;
 	min-width: 280px;
 	top: 0;

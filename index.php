@@ -50,12 +50,12 @@ session_start(); ?>
 <div id="middle"><marquee direction="left" style="    color: #FF0000; font-size: 16px;font-weight: 600; letter-spacing: 1.1px; background: white; padding: 1.5px 0; font-family: sans-serif ,thin; opacity:.7;"><strong>Those who have not connected HBTUMAIL with their email please <a href="new.php">click here.</a> </strong></marquee>
 <div id="logHolder">
 <div id="logBox">
-<div id="LogTextBar"> <?php if(isset($_GET['status'])){ echo $_GET['status'] ; }else{ echo 'Log into HBTU Mail' ; } ?></div>
+<div id="LogTextBar"> <?php if(isset($_GET['status'])){ echo $_GET['status'] ; }else{ echo 'Log Into HBTU Mail' ; } ?></div>
 <div id="LogInputBar">
 <form action="loginchk.php" method="post" enctype="multipart/form-data">
 <span><input name="email" type="text" placeholder="Email Address" required>
 <input name="password" type="password" placeholder="Password"  required></span>
-<input class="submitButton" type="submit" value="Log In" />
+<input class="submitButton" type="submit" value="Login" />
 </form>
 </div>
 <!--<div id="LogForgotBar"> <a href="recover.php"> Recover Account </a> </div>-->
