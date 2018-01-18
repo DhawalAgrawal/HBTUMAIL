@@ -1,6 +1,6 @@
 <?php session_set_cookie_params(time()+600,'/','http://www.decoder.co.in/',false,true);
 session_start(); ?>
-<?php if( $_SESSION['member'] == 'In'){ header( 'location:compose.php' );  exit(); } ?>
+<?php if( $_SESSION['member'] == 'In'){ header( 'location:home.php' );  exit(); } ?>
 <?php include('config.php'); ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -54,9 +54,9 @@ session_start(); ?>
 <div id="head">Harcourt Butler Technical University Kanpur</div>
 <div id="middle">
 <div id="logHolder">
-<div id="logBox">
-<div id="LogTextBar"> <?php if(isset($_GET['status'])){ echo $_GET['status'] ; }else{ echo 'Register into HBTU Mail' ; } ?></div>
-<div id="LogInputBar">
+<div id="signBox">
+<div id="signTextBar"> <?php if(isset($_GET['status'])){ echo $_GET['status'] ; }else{ echo 'Register Into HBTU Mail' ; } ?></div>
+<div id="signInputBar">
 <form action="usersub.php" method="post" enctype="multipart/form-data">
 <span><div style="    color: white; font-weight: bolder; font-family: sans-serif ,thin;">Upload image of college Id/Rc.</div>
 <input name="idimage" type="file" required>
@@ -65,7 +65,7 @@ session_start(); ?>
 <input name="email" type="email" placeholder="Email Address" required>
 <input name="password" type="password" placeholder="Password"  required>
 </span>
-<input class="submitButton" type="submit" value="Submit" />
+<input class="submitButton1" type="submit" value="Submit" />
 </form>
 </div>
 <div id="LogForgotBar"> <a href="index.php"> Login Account </a> </div>
