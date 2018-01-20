@@ -16,7 +16,7 @@ $name     = $_POST['name'];
 $email    = $_POST['email'];
 $password = md5($_POST['password']);  
 
-$save = mysql_query("INSERT INTO `dhawal`.`mailmembers` (`rid`, `name`, `rollNumber`, `branch`, `f_s`, `year`, `idimage`, `image`, `yn`, `email`, `password`) VALUES ('$rid', '$name', '$rn', 'null', 'null', '0000', '$pic_name', 'null', '0000', '$email', '$password');");
+$save = mysql_query("INSERT INTO `dhawal`.`mailmembers` (`rid`, `name`, `rollNumber`, `branch`, `f_s`, `year`, `idimage`, `image`, `yn`, `email`, `password`) VALUES ('$rid', '$name', '$rn', 'null', 'null', '0000', '$pic_name', 'null', '0000', '$email', '$password')");
 
 header( 'location:http://hbtumail.decoder.co.in/new.php?status=Your HBTUMAIL account will get activated within 24hrs.' );  exit();
 
