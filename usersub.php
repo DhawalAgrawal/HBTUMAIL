@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php ob_start(); include('config.php'); ?>
 
 <?php
 $rid       = mt_rand() ;?>
@@ -15,7 +15,7 @@ $path = "idimage/";
 	$size = $_FILES['idimage']['size'];  
 	list($txt, $ext) = explode(".", $na);
 	$file= time().substr(str_replace(" ", "_", $txt), 0);
-	$info = pathinfo($_FILES['idimage']['name']);
+	$info = pathinfo($file);
 	$filename = $file.".".$ext;
 	$pic_name = $path.$filename;
 	move_uploaded_file($_FILES['idimage']['tmp_name'], $path.$filename);
@@ -25,7 +25,6 @@ $email    = $_POST['email'];
 $password = md5($_POST['password']);  
 
 $save = mysql_query("INSERT INTO `dhawal`.`mailmembers` (`rid`, `name`, `rollNumber`, `branch`, `f_s`, `year`, `idimage`, `image`, `yn`, `email`, `password`) VALUES ('$rid', '$name', '$rn', 'null', 'null', '0000', '$pic_name', 'null', '0000', '$email', '$password')");
-
 header( 'location:http://hbtumail.decoder.co.in/new.php?status=Your HBTUMAIL account will get activated within 24hrs.' );  exit();
 
 ?>

@@ -1,4 +1,4 @@
-<?php session_set_cookie_params(time()+600,'/','http://www.hbtumail.decoder.co.in/',false,true);
+<?php ob_start(); session_set_cookie_params(time()+600,'/','http://www.hbtumail.decoder.co.in/',false,true);
 session_start(); ?>
 <?php if( $_SESSION['member'] == 'In'){ header( 'location:home.php' );  exit(); } ?>
 <?php include('config.php'); ?>

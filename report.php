@@ -1,4 +1,4 @@
-<?php include('config.php'); ?>
+<?php ob_start();include('config.php'); ?>
 
 <?php $rrid=$_GET['rrid'];
 $sid=$_GET['sid'];

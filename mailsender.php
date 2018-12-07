@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php ob_start(); session_start(); ?>
 <?php include('config.php'); ?>
 <?php $o = mysql_query("SELECT * FROM  `mailmembers` WHERE  `rid` LIKE  '".$_SESSION['rid']."'") ; $p = mysql_fetch_array($o); ?>
 <?php if(!$p['id']){ header( 'location:index.php' );  exit(); } ?>
