@@ -29,7 +29,7 @@ Follow this guide to setup your development enviroment.
     git clone https://github.com/DhawalAgrawal/HBTUMAIL.git
     ```
 
-2. Install VOZ
+2. Install HBTUMAIL
 
 	```
 	Copy all the files to the htdoccs folder of Xampp server
