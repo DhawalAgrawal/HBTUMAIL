@@ -85,7 +85,7 @@ $(function() {
 				onOpen: function() { }, // Open callback
 				onClose: function() { } // Close callback
 			});
-			
+
 
 		});
 function MM_jumpMenu(targ,selObj,restore){ //v3.0
@@ -94,7 +94,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 }
 </script>
 	<style type="text/css">
-	
+
         a {
 			color: #222;
 		}
@@ -122,9 +122,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 			margin: auto;
 			position: relative;
 		}
-		
 
-		
+
+
 	</style>
     <link href="css/uploader.css" rel="stylesheet" type="text/css" />
 </head>
@@ -167,7 +167,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 							<span class="text">Sent</span>
 						</a>
 					</li>
-					
+
 				</ul>
 			</div>
 		</div>
@@ -185,7 +185,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 			<a href="logout.php" class="login-btn">Log out...</a>
 			<div class="divider"></div>
 		</div>
-		
+
 
 	</div>
 	</nav>
@@ -235,10 +235,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
         </form>
 <div id="wrap">
         <form method="post" id="f2" action="files.php" enctype="multipart/form-data">
-        <img class="attached" src="images/attachicon.png"  style="border:0px;"/> <input class="upload" type="file" id="url" name="url[]" multiple> 
-        
+        <img class="attached" src="images/attachicon.png"  style="border:0px;"/> <input class="upload" type="file" id="url" name="url[]" multiple>
+
 	    <div class="formRow"> <input class="submit" type="submit" id="submit" name="submit" value="Send"> </div>
-        
+
         </form>
 
         </div>
@@ -249,9 +249,9 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     <div id='filters' class='sections2'>
       <ul><?php $a = mysql_query("SELECT * FROM  `mailmembers` WHERE  `yn` LIKE  '1'") ; while($b = mysql_fetch_array($a)){ ?>
         <li class='grid-products'>
-          <div class='grid-variants' data-fs='<?=$b['f_s']?>' data-year='<?=$b['year']?>' data-branch='<?=$b['branch']?>'><?=$b['name']?></div>
+          <div class='grid-variants'style="font-family: 'Roboto' ;" data-fs='<?=$b['f_s']?>' data-year='<?=$b['year']?>' data-branch='<?=$b['branch']?>'><?=$b['name']?></div>
         </li><?php } ?>
-        
+
       </ul>
     </div>
     </div>
